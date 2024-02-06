@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paketlar</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+
+        header {
+            background-color: #343a40;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        section {
+            padding: 30px;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+            margin-bottom: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        h2 {
+            color: #343a40;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        .package-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .package {
+            flex: 1;
+            margin: 10px;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            background-color: #f5f5f5;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 12px 24px;
+            margin-top: 20px;
+            font-size: 1.2em;
+            text-decoration: none;
+            color: #fff;
+            background-color: #007bff;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 style="margin: 0;">Paketlar</h1>
+    </header>
+
+    <div class="package-container">
+
+        <section class="package">
+            <h2>Boshlang’ich</h2>
+            <ul>
+                <li>Oy kitobi</li>
+                <li>Bitta sharh forumi va muhokama guruhiga kirish</li>
+                <li>Xatcho‘p va ichimliklar uchun krujka</li>
+                <li>Ichimliklar x 1 – bir quti qahva yoki choy.</li>
+            </ul>
+            <a href="#" class="cta-button">Buy Now</a>
+        </section>
+
+        <section class="package">
+            <h2>O’rta</h2>
+            <ul>
+                <li>Oy kitobi va bitta shaxsiy tanlov kitobi</li>
+                <li>Ikki forum va muhokama guruhlariga kirish</li>
+                <li>Xatcho‘p va kitob sumkasi</li>
+                <li>Ichimliklar x 2 – kofe, issiq shokolad yoki choy qutisi.</li>
+            </ul>
+            <a href="#" class="cta-button">Buy Now</a>
+        </section>
+
+        <section class="package">
+            <h2>Ilg’or</h2>
+            <ul>
+                <li>Oy kitobi va uchta shaxsiy tanlov kitobi</li>
+                <li>Barcha forumlar va muhokama guruhlariga ochiq kirish</li>
+                <li>Ichimliklar x 3 – bir quti qahva, issiq shokolad yoki choy.</li>
+            </ul>
+            <a href="#" class="cta-button">Buy Now</a>
+        </section>
+
+    </div>
+
+    <footer>
+        &copy; 2024 Paketlar
+    </footer>
+
+</body>
+</html>
